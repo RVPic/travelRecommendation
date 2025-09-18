@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommandations de voyages</title>
+    <style>
+        /* Style pour la page avec image de fond */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Image de fond */
+            background-image: url(image_fond.jpg);
+            background-size: cover; /* couvre toute la zone */
+            background-position: center; /* centre l'image */
+            height: 100vh; /* hauteur de la vue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* couleur du texte */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* ombre pour le texte */
+        }
+
+        /* Style pour le message d'introduction */
+        .intro-message {
+            background-color: rgba(0, 0, 0, 0.0); /* fond transparent */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation avec logo et texte sur la même ligne -->
+    <nav style="position: fixed; top: 0; width: 100%;display: flex; align-items: center; padding: 10px; background-color: #f0f0f0;">
+        <!-- Logo -->
+        <img src="logo_agence_voyage.png" alt="Logo de votre site" style="height:50px; margin-right:10px;">
+        <!-- Titre du site -->
+        <h1 style="margin: 0;">Recommandations de voyages</h1>
+        <!-- Espace entre le titre et les liens -->
+        <div style="margin-left: auto;">
+            <ul style="list-style: none; display: flex; gap: 15px; margin: 0;">
+                <li><a href="./index.html" id="home">Accueil</a></li>
+                <li><a href="./about.html" id="about">À propos de nous</a></li>
+                <li><a href="./contact.html" id="contact">Contactez-nous</a></li>
+                <li>
+                    <input type="text" id="conditionInput" placeholder="Entrez des mots-clés">
+                </li>
+                <li>
+                    <button id="btnSearch">Rechercher</button>
+                </li>
+                <li>
+                    <button id="reinit">Réinitialiser</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Contenu du message d'introduction -->
+    <div style="margin-top: 70px; padding: 20px;">
+        <h1>Bienvenue sur notre site !</h1>
+        <p>Explorons le monde ensemble, et trouvez votre destinations idéale .</p>
+        <p>Nous sommes là pour vous accompagner</p>
+    </div>
+    <!-- Positionnement des icones des réseaux sociaux -->
+    <div style="
+    position: fixed; /* Fixe la position */
+    top: 50%; /* Centré verticalement */
+    left: 0; /* Aligné à gauche */
+    transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+    display: flex; /* Disposition en colonne */
+    flex-direction: column; /* Orientation verticale */
+    align-items: center; /* Centrage horizontal des icônes */
+    background-color: rgba(255, 255, 255, 0.8); /* Optionnel : fond semi-transparent */
+    padding: 10px;">
+        <a href="https://facebook.com" target="_blank" style="margin: 0 10px; font-size: 24px; color: #3b5998;">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin: 0 10px; font-size: 24px; color: #1da1f2;">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" style="margin: 0 10px; font-size: 24px; color: #e1306c;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" style="margin: 0 10px; font-size: 24px; color: #0077b5;">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </body>
+</html>

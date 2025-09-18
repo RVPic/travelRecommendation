@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>À propos de nous</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* Image de fond */
+      background-image: url('image_fond.jpg');
+      background-size: cover; /* couvre toute la zone */
+      background-position: center; /* centre l'image */
+      min-height: 100vh; /* hauteur minimale de la vue */
+      color: white; /* couleur du texte */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* ombre pour le texte */
+    }
+
+    /* Barre de navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(240, 240, 240, 0.9);
+      z-index: 1000;
+    }
+
+    nav img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin-left: auto;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Ajout d'un fond semi-transparent pour le contenu principal pour meilleure lisibilité */
+    main, section {
+      padding: 80px 20px 20px 20px; /* padding supérieur pour éviter que le contenu ne soit caché sous la barre fixe */
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* Centrer le texte dans "Informations sur l'entreprise" */
+    section h2 {
+      text-align: center;
+    }
+
+    section:nth-of-type(1) p {
+      text-align: center;
+    }
+
+    .intro-text {
+      text-align: center;
+    }
+
+    /* Style pour la section équipe */
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .member {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .member h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .member p {
+      margin: 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <!-- Logo -->
+    <img src="logo_agence_voyage.png" alt="Logo de votre site" />
+    <!-- Titre du site -->
+    <h1>Recommandations de voyages</h1>
+    <!-- Liens et recherche -->
+    <ul>
+      <li><a href="./index.html" id="home">Accueil</a></li>
+      <li><a href="./about.html" id="about">À propos de nous</a></li>
+      <li><a href="./contact.html" id="contact">Contactez-nous</a></li>
+      <li>
+        <input type="text" id="conditionInput" placeholder="Entrez des mots-clés" />
+      </li>
+      <li>
+        <button id="btnSearch">Rechercher</button>
+      </li>
+      <li>
+        <button id="reinit">Réinitialiser</button>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>À propos de nous</h1>
+    <p class="intro-text">Découvrez notre entreprise et notre équipe passionnée.</p>
+  </main>
+
+  <section>
+    <h2>Informations sur l'entreprise</h2>
+    <p>
+      Notre entreprise est spécialisée dans l'organisation de voyages à travers le monde.
+    </p>
+    <p>
+      Fondée en 2010, nous nous engageons à fournir des services de haute qualité et à maintenir une relation de confiance avec nos clients.
+      </p>
+  </section>
+
+  <section>
+    <h2>Notre équipe</h2>
+    <div class="team">
+      <div class="member">
+        <h3>Marie Dupont</h3>
+        <p>Directrice</p>
+      </div>
+      <div class="member">
+        <h3>Jean Martin</h3>
+        <p>Responsable Financier</p>
+      </div>
+      <div class="member">
+        <h3>Sophie Leroy</h3>
+        <p>Responsable Marketing</p>
+      </div>
+      <div class="member">
+        <h3>Paul Dubois</h3>
+        <p>Conseiller Clients</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
