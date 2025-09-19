@@ -176,3 +176,21 @@ function traiterRecherche() {
     document.getElementById('recommendations').style.display = 'none';
   }
 }
+
+document.getElementById('resetButton').addEventListener('click', reinitialiser);
+
+function reinitialiser() {
+    // Effacer le champ de recherche
+    document.getElementById('searchInput').value = '';
+  
+    // Cacher la section recommandations
+    document.getElementById('recommendations').style.display = 'none';
+  
+    // Réinitialiser le message de résultats
+    document.getElementById('results').textContent = '';
+  
+    // Afficher la section d'introduction si nécessaire
+    document.getElementById('introduction').style.display = 'block';
+  
+    // Optionnel : vous pouvez aussi réinitialiser d'autres éléments si besoin
+  }
