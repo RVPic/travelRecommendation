@@ -45,24 +45,26 @@
                 <li><a href="./about.html" id="about">À propos de nous</a></li>
                 <li><a href="./contact.html" id="contact">Contactez-nous</a></li>
                 <li>
-                    <input type="text" id="conditionInput" placeholder="Entrez des mots-clés">
+                    <input type="text" id="searchInput" placeholder="Entrez des mots-clés">
                 </li>
                 <li>
-                    <button id="btnSearch">Rechercher</button>
+                    <button id="searchButton">Rechercher</button>
                     <div id="results"></div>
                 </li>
                 <li>
-                    <button id="reinit">Réinitialiser</button>
+                    <button id="reinitButton">Réinitialiser</button>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Contenu du message d'introduction -->
-    <div style="margin-top: 70px; padding: 20px;">
+    <div id= "introduction"; style="margin-top: 70px; padding: 20px;">
         <h1>Bienvenue sur notre site !</h1>
         <p>Explorons le monde ensemble, et trouvez votre destinations idéale .</p>
         <p>Nous sommes là pour vous accompagner</p>
     </div>
+    <!-- Positionnement des Recommandations -->
+    <div id="recommendations" style="display: none; padding: 10px; background-color: rgba(255,255,255,0.8); border-radius: 8px; max-width: 800px; margin: auto;"></div>
     <!-- Positionnement des icones des réseaux sociaux -->
     <div style="
     position: fixed; /* Fixe la position */
@@ -87,6 +89,6 @@
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
-    <script src="travel_recommendation.js"></script>  
+      <script src="travel_recommendation.js"></script>
     </body>
 </html>
