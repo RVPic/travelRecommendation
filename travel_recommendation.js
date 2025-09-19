@@ -71,7 +71,7 @@ function afficherRecommandationsHTML(data) {
         const cityImg = document.createElement('img');
         cityImg.src = city.imageUrl;
         cityImg.alt = city.name;
-        cityImg.style.width = '200px'; // Ajustez la taille selon besoin
+        cityImg.style.width = '600px';
   
         const cityDesc = document.createElement('p');
         cityDesc.innerHTML = `<strong>${city.name}</strong>: ${city.description}`;
@@ -92,7 +92,7 @@ function afficherRecommandationsHTML(data) {
       const templeImg = document.createElement('img');
       templeImg.src = temple.imageUrl;
       templeImg.alt = temple.name;
-      templeImg.style.width = '200px';
+      templeImg.style.width = '600px';
   
       const templeDesc = document.createElement('p');
       templeDesc.innerHTML = `<strong>${temple.name}</strong>: ${temple.description}`;
@@ -112,7 +112,7 @@ function afficherRecommandationsHTML(data) {
       const beachImg = document.createElement('img');
       beachImg.src = beach.imageUrl;
       beachImg.alt = beach.name;
-      beachImg.style.width = '200px';
+      beachImg.style.width = '600px';
   
       const beachDesc = document.createElement('p');
       beachDesc.innerHTML = `<strong>${beach.name}</strong>: ${beach.description}`;
