@@ -16,42 +16,7 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* ombre pour le texte */
     }
 
-    /* Barre de navigation */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(240, 240, 240, 0.9);
-      z-index: 1000;
-    }
-
-    nav img {
-      height: 50px;
-      margin-right: 10px;
-    }
-
-    nav h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-      margin-left: auto;
-      align-items: center;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
+   
     /* Ajout d'un fond semi-transparent pour le contenu principal pour meilleure lisibilité */
     main, section {
       padding: 80px 20px 20px 20px; /* padding supérieur pour éviter que le contenu ne soit caché sous la barre fixe */
@@ -110,17 +75,21 @@
 <body>
   <!-- Barre de navigation -->
   <nav>
-    <!-- Logo -->
-    <img src="logo_agence_voyage.png" alt="Logo de votre site" />
-    <!-- Titre du site -->
-    <h1>Recommandations de voyages</h1>
-    <!-- Liens et recherche -->
-    <ul>
-      <li><a href="./index.html" id="home">Accueil</a></li>
-      <li><a href="./about.html" id="about">À propos de nous</a></li>
-      <li><a href="./contact.html" id="contact">Contactez-nous</a></li>
-    </ul>
-  </nav>
+    <!-- Barre de navigation avec logo et texte sur la même ligne -->
+    <nav style="position: fixed; top: 0; width: 100%;display: flex; align-items: center; padding: 10px; background-color: #f0f0f0;">
+        <!-- Logo -->
+        <img src="logo_agence_voyage.png" alt="Logo de votre site" style="height:50px; margin-right:10px;">
+        <!-- Titre du site -->
+        <h1 style="margin: 0;">Recommandations de voyages</h1>
+        <!-- Espace entre le titre et les liens -->
+        <div style="margin-left: auto;">
+            <ul style="list-style: none; display: flex; gap: 15px; margin: 0;">
+                <li><a href="./index.html" id="home">Accueil</a></li>
+                <li><a href="./about.html" id="about">À propos de nous</a></li>
+                <li><a href="./contact.html" id="contact">Contactez-nous</a></li>
+            </ul>
+        </div>
+    </nav>
 
   <main>
     <h1>À propos de nous</h1>

@@ -3,6 +3,7 @@
       {
         "id": 1,
         "name": "Australia",
+        "timezone": "Australia/Sydney",
         "cities": [
           {
             "name": "Sydney, Australia",
@@ -19,6 +20,7 @@
       {
         "id": 2,
         "name": "Japan",
+        "timezone": "Asia/Tokyo",
         "cities": [
           {
             "name": "Tokyo, Japan",
@@ -35,6 +37,7 @@
       {
         "id": 3,
         "name": "Brazil",
+        "timezone": "America/Sao_Paulo",
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
@@ -53,12 +56,14 @@
       {
         "id": 1,
         "name": "Angkor Wat, Cambodia",
+        "timezone": "Cambodge/Angkor",
         "imageUrl": "image_angkor.jpg",
         "description": "A UNESCO World Heritage site and the largest religious monument in the world."
       },
       {
         "id": 2,
         "name": "Taj Mahal, India",
+        "timezone": "Inde/New_Delhi",
         "imageUrl": "image_taj-mahal.jpg",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
@@ -67,12 +72,14 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
+        "timezone": "Pacific/Tahiti",
         "imageUrl": "image_bora-bora.jpg",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
         "id": 2,
         "name": "Copacabana Beach, Brazil",
+        "timezone": "America/Rio",
         "imageUrl": "image_copacabana.jpg",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
       }
